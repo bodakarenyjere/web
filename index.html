@@ -26,7 +26,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body data-spy="scroll" data-target=".navbar" data-offset="51" onclick="PlayAudio{}">
     <!-- Navbar Start -->
 	<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
@@ -83,6 +83,7 @@
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Karen & Jeremías</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">18-10-24</h3>
+								<h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Ponele play al video</h3>
                             </div>
                             <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
@@ -117,7 +118,7 @@
                     </button>        
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" autoplay unmuted src="https://www.youtube.com/embed/eAsxJDg5puo?si=Amgx9Z_NWSe7fOus&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rbaoKL1Ei0c?si=2nFTJspnLZfMXF3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						
                     </div>
                 </div>
@@ -261,7 +262,7 @@
     <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galería</h6>
-            <h1 class="font-secondary display-4 text-white">Nuestro Album de Fotos</h1>
+            <h1 class="font-secondary display-4 text-white">Nuestra galería de fotos</h1>
             <i class="far fa-heart text-white"></i>
         </div>
         <div class="owl-carousel gallery-carousel">
@@ -278,20 +279,20 @@
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/gallery-3.jpeg" alt="">
+                <a href="img/gallery-3.jpeg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/gallery-4.jpeg" alt="">
+                <a href="img/gallery-4.jpeg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/gallery-5.jpeg" alt="">
+                <a href="img/gallery-5.jpeg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
@@ -301,9 +302,27 @@
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
+			<div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-7.jpeg" alt="">
+                <a href="img/gallery-7.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+			<div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-8.jpg" alt="">
+                <a href="img/gallery-8.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+			<div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-9.jpeg" alt="">
+                <a href="img/gallery-9.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
         </div>
     </div>
-    <!-- Gallery End -->
+	<!-- Gallery End -->
 
 
     <!-- Event Start -->
@@ -456,43 +475,7 @@
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Nombre"/>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Tu E-mail"/>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>Nuemero de invitados</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>Conferencia + Fiesta</option>
-                                        <option>Fiesta</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Mensaje" required="required"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Confirmar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd83jHgT1stegrjMJxGuzDbTnOkazHxI5FwU9M_W6Nru-0wyg/viewform?embedded=true" width="640" height="902" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
     </div>
@@ -510,11 +493,12 @@
                 <p class="text-white" href="#"></p>
                 <span class="px-3"></span>
                 <p class="text-white" href="#"></p>
-            </div>
-			<iframe width="300" height="200" autoplay muted src="https://www.youtube.com/embed/rbaoKL1Ei0c?si=aPQfUFMBM33rMbAe?rel=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<audio controls id=musica1>
+					<source src="cancion.mp3" type="audio/mpeg">
+				</audio>
+            </div>		 
             <p class="m-0"><a class="text-primary" href="#"></a><a class="text-primary" href="https://freewebsitecode.com"></a>
             </p>
-			
         </div>
     </div>
     <!-- Footer End -->
